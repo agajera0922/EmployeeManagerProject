@@ -22,7 +22,11 @@ This project is a Django-based employee management system that allows users to v
 ## Available Endpoints
 
 1. **/admin:** Provides a built-in web-based interface for site administrators to manage site content and user accounts.You can access the admin page at http://127.0.0.1:8000/admin.
-2. **/employee/relationship:** Displays the employee and corresponding manager of all employees. You can access the employee management system at http://127.0.0.1:8000/employee/relationship.
+2. **/employee/relationship (GET All Employees):** Displays the employee and corresponding manager of all employees. You can access the employee management system at http://127.0.0.1:8000/employee/relationship.
+3. **/employee/relationship (GET By Employee Id):** Displays an employee and corresponding manager of a employee with a provided Employee Id. You can access the employee management system at http://127.0.0.1:8000/employee/relationship/<emp_id>.
+4. **/employee/relationship (POST New Employee):** Creates a new employee with provided Employee Name and manager details. You can access the employee management system at http://127.0.0.1:8000/employee/relationship with a POST method and request body as:
+{ "emp_name" : String,
+"manager_id": Integer}
 
 ## Database Commands
 
